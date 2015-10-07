@@ -35,26 +35,24 @@ public class Kosti2 {
             System.out.println(kub3 + "     " + kub4 + "     " + (kub3 + kub4));
             System.out.println();
             if (kub1 + kub2 > kub3 + kub4) {
-                n = n+1;
+                n = n + 1;
                 System.out.println("Переможець " + gamer1 + "    " + n + ":" + m);
             } else if (kub1 + kub2 == kub3 + kub4) {
-                System.out.println("Нічия "+"     "+n+":"+m);
+                System.out.println("Нічия " + "     " + n + ":" + m);
             } else {
-                m = m+1;
+                m = m + 1;
                 System.out.println("Переможець " + gamer2 + "    " + n + ":" + m);
             }
-            l=l+1;
-            System.out.println("Якщо хочете зупинитися 2! "+ "    гра        "+l );
+            l = l + 1;
+            System.out.println("Якщо хочете зупинитися 2! " + "    гра        " + l);
             resp2 = scanner.nextLine();
-            if (resp2.equals("2")){
-                if(n>m){
-                    System.out.println(gamer1 + " Виграв з рахунком" + n + ":" +  m);
-                }
-                else if(m>n) {
+            if (resp2.equals("2")) {
+                if (n > m) {
+                    System.out.println(gamer1 + " Виграв з рахунком" + n + ":" + m);
+                } else if (m > n) {
                     System.out.println(gamer2 + " Виграв з рахунком" + m + ":" + n);
-                }
-                else {
-                    System.out.println("нічия, рахунок "+ n + ":"+m);
+                } else {
+                    System.out.println("нічия, рахунок " + n + ":" + m);
                 }
                 break;
             }
